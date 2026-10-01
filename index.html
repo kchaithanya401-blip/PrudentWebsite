@@ -23,6 +23,12 @@
 
         </a>
 
+        <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-toggle" aria-hidden="true">
+        <label for="mobile-menu-toggle" class="hamburger" aria-label="Open navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
 
         <nav class="navigation">
             <a href="#home">Home</a>
@@ -296,7 +302,7 @@
         </div>
     </section>
 
-    <footer class="footer" id="footer">
+    <footer class="footer" id="footer" method="">
         <div class="footer-grid">
             <div class="footer-brand">
                 <a href="#home" class="footer-logo">PRUDENT</a>
@@ -350,103 +356,108 @@
                 Tell us a little about yourself. Our team will get in touch with you.
             </p>
 
-            <form id="contact-fields">
-  <div class="form-grid">
-    
+            <form id="consultation-form" class="contact-form reveal" action="#thankyou-popup" method="post"
+                target="form-submit-target">
+                <h3>Schedule a consultation</h3>
+                <p class="form-note">Fields marked * are required.</p>
 
-    <div class="form-group">
-      <label for="full-name" class="form">Full name </label>
-      <input 
-        id="full-name" 
-        name="full-name" 
-        type="text" 
-        placeholder="Your name" 
-        pattern="^[A-Za-z]+([\s\-'][A-Za-z]+)*$" 
-        minlength="2" 
-        title="Full name must be at least 2 characters long and contain letters only."
-        required
-      >
-      <span class="error-msg" id="full-name-error"></span>
-    </div>
+                <div class="field-row">
+                    <div class="field">
+                        <label for="name">Full name *</label>
+                        <input id="name" name="name" type="text" pattern="^[A-Za-z]+ [A-Za-z]+$"
+                            title="Name should contain First and Last name" autocomplete="name" placeholder="Your name"
+                            required>
+                    </div>
+                    <div class="field">
+                        <label for="company">Company name *</label>
+                        <input id="company" name="company" pattern="^[a-zA-Z'-]+(?:\s[a-zA-Z'-]+){0,2}$"
+                            title="Company name should contain only letters" type="text" autocomplete="organization"
+                            placeholder="Where you work" required>
+                    </div>
+                </div>
 
-    
+                <div class="field-row">
+                    <div class="field">
+                        <label for="email">Work email *</label>
+                        <input id="email" name="email" type="email" autocomplete="email" placeholder="name@company.com"
+                            required>
+                    </div>
+                    <div class="field">
+                        <label for="role">Role / title</label>
+                        <input id="role" name="role" type="text" pattern="^[a-zA-Z'-]+(?:\s[a-zA-Z'-]+){0,2}$"
+                            title="Role should contain only letters" autocomplete="organization-title"
+                            placeholder="Your role">
+                    </div>
+                </div>
 
-    <div class="form-group">
-      <label for="company-name" class="form">Company name </label>
-      <input 
-        id="company-name" 
-        name="company-name" 
-        type="text" 
-        placeholder="Where you work"
-        pattern="^[a-zA-Z0-9]+( [a-zA-Z0-9]+)*$" 
-        minlength="2" 
-        title="Company name must contain at least 2 characters and can contain letters, numbers, and spaces only." 
-        required
-      >
-      <span class="error-msg" id="company-name-error"></span>
-    </div>
+                <div class="field">
+                    <label for="service">Service *</label>
+                    <select id="service" name="service" required>
+                        <option value="">Select a service</option>
+                        <option>Digital Transformation</option>
+                        <option>Cybersecurity Services</option>
+                        <option>Data &amp; AI Services</option>
+                        <option>Enterprise Applications</option>
+                        <option>Partnerships</option>
+                        <option>Technology Staffing</option>
+                    </select>
+                </div>
 
-   
+                <div class="field">
+                    <label for="message">Your requirement in brief</label>
+                    <textarea id="message" name="message" rows="4"
+                        placeholder="Tell us what you're working on"></textarea>
+                </div>
 
-    <div class="form-group">
-      <label for="work-email" class="form">Work email </label>
-      <input 
-        id="work-email" 
-        name="work-email" 
-        type="email" 
-        placeholder="name@company.com" 
-        required
-      >
-      <span class="error-msg" id="work-email-error"></span>
-    </div>
+                <button class="btn btn-grad submit-consult-btn" type="submit">
+                    <label for="thankyou-modal-toggle" class="submit-btn-click-target">
+                        Schedule a Consultation
+                    </label>
+                </button>
+            </form>
 
-    
-    <div class="form-group">
-      <label for="role">Role / title</label>
-      <input
-        type="text"
-        name="role"
-        pattern="^[a-zA-Z]+( [a-zA-Z]+)*$"
-        minlength="2"
-        title="Enter a valid role using letters and spaces only.">
-    </div>
-  </div>
-
- 
-  <div class="form-group">
-    <label for="service" class="form">Service </label>
-    <select id="service" name="service" required>
-      <option value="">Select a service</option>
-      <option value="Digital Transformation">Digital Transformation</option>
-      <option value="Cloud Solutions">Cloud Solutions</option>
-      <option value="Data & Analytics">Data & Analytics</option>
-      <option value="Cyber Security Services">Cyber Security Services</option>
-      <option value="Enterprise Applications">Enterprise Applications</option>
-      <option value="AI & Automation">AI & Automation</option>
-      <option value="IT Consulting">IT Consulting</option>
-      <option value="Partnerships">Partnerships</option>
-      <option value="Other">Other</option>
-    </select>
-    <span class="error-msg" id="service-error"></span>
-  </div>
-
-  
-  <div class="form-group">
-    <label for="requirement">Your requirement in brief</label>
-    <textarea id="requirement" name="requirement" rows="4" placeholder="Tell us what you're working on"></textarea>
-  </div>
-
-  <button type="submit" class="submit-btn" formaction="#thank-you">
-    Submit →
-  </button>
-</form>
 
 
         </div>
 
     </section>
+    <iframe name="form-submit-target" id="form-submit-target" class="form-submit-frame" aria-hidden="true"
+        tabindex="-1"></iframe>
+    <input type="checkbox" id="thankyou-modal-toggle" class="popup-modal-checkbox" hidden aria-hidden="true">
+ 
+    <div class="thankyou-modal-overlay" id="thankyou-popup" role="dialog" aria-modal="true"
+        aria-labelledby="thankyou-popup-title">
+        <a href="#contact" class="thankyou-backdrop-close" aria-label="Close modal backdrop">
+            <label for="thankyou-modal-toggle" class="thankyou-backdrop-label" aria-hidden="true"></label>
+        </a>
+ 
+        <div class="thankyou-modal-card">
+            <a href="#contact" class="thankyou-modal-close" aria-label="Close popup">
+                <label for="thankyou-modal-toggle" class="thankyou-close-label" aria-hidden="true">&times;</label>
+            </a>
+ 
+           
+ 
+            <div class="thankyou-badge-kicker">        
+            </div>
+ 
+            <h3 id="thankyou-popup-title" class="thankyou-modal-title">Thank you for submitting the form!</h3>
+ 
+            <p class="thankyou-modal-desc">
+                Your consultation enquiry has been received. Our enterprise advisory and delivery team will review your
+                requirements and reach out to you shortly.
+            </p>
+ 
+            <div class="thankyou-modal-footer">
+                 <button type="reset" form="consultation-form" class="btn btn-grad thankyou-done-btn">
+    <label for="thankyou-modal-toggle" class="thankyou-done-label">Close</label>
+  </button>
+            </div>
+        </div>
+    </div>
+ 
 
-    <section class="popup-overlay success-overlay" id="thank-you">
+    <!-- <section class="popup-overlay success-overlay" id="thank-you">
         <a href="#home" class="overlay-close" aria-label="Close thank you message"></a>
 
         <div class="popup-box success-box">
@@ -462,9 +473,9 @@
                 requirements and reach out to you shortly.
             </p>
 
-            <a href="#home" class="submit-btn thankyou-done-btn">Close</a>
+            <a href="#contact-form" class="submit-btn thankyou-done-btn">Close</a>
         </div>
-    </section>
+    </section> -->
 
 </body>
 
