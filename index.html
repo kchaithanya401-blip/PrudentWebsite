@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,20 @@
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" href="prudent-logo1.jpg" type="image/jpeg">
 </head>
+
 <body id="home">
 
-    
     <header class="header">
         <a href="#home" class="logo">
-            <span>PRUDENT</span>
-            <small>TECHNOLOGIES & CONSULTING</small>
+            <img src="prudent-logo1.jpg" alt="logo" width="30px">
+            <div class="logo-text">
+
+                <span>PRUDENT</span>
+
+            </div>
+
         </a>
+
 
         <nav class="navigation">
             <a href="#home">Home</a>
@@ -27,6 +34,35 @@
             <a href="#contact-form" class="contact-btn">Contact Us ↗</a>
         </nav>
     </header>
+
+    <section class="popup-overlay success-overlay" id="thank-you">
+
+        <a href="#contact-form" class="overlay-close" aria-label="Close thank you message"></a>
+
+        <div class="popup-box success-box">
+
+            <a href="#contact-form" class="close-btn" aria-label="Close thank you message">
+                &times;
+            </a>
+
+            <div class="success-icon">✓</div>
+
+            <p class="eyebrow">SUBMISSION COMPLETE</p>
+
+            <h2>Thank you!</h2>
+
+            <p class="popup-description">
+                Your form has been submitted successfully.
+                Our team will get in touch with you shortly.
+            </p>
+
+            <a href="#contact-form" class="submit-btn thankyou-done-btn">
+                Close
+            </a>
+
+        </div>
+
+    </section>
 
 
     <section class="hero">
@@ -40,12 +76,11 @@
             </p>
             <div class="hero-buttons">
                 <a href="#services" class="btn">Explore Our Services ↗</a>
-                <a href="#company1" class="btn btn-outline">Discover Prudent</a>
+                <a href="#company" class="btn btn-outline">Discover Prudent</a>
             </div>
         </div>
     </section>
 
-   
     <section class="section" id="services">
         <div class="section-heading">
             <p class="eyebrow">WHAT WE DO</p>
@@ -87,11 +122,9 @@
         </div>
     </section>
 
-    
     <section class="section company" id="company">
         <div class="company-image">
-            <img
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80"
+            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80"
                 alt="Modern business office">
         </div>
         <div class="company-content">
@@ -106,11 +139,9 @@
                 Our approach combines business understanding, technical
                 expertise and a commitment to practical results.
             </p>
-            <!-- <a href="#contact-form" class="text-link">Discover our approach ↗</a> -->
         </div>
     </section>
 
-   
     <section class="section" id="industries">
         <div class="section-heading">
             <p class="eyebrow">INDUSTRIES WE SERVE</p>
@@ -119,18 +150,25 @@
         </div>
 
         <div class="industry-grid">
-            <article class="industry-card">01 <h3>Banking & Finance</h3></article>
-            <article class="industry-card">02 <h3>Healthcare</h3></article>
-            <article class="industry-card">03 <h3>Retail & Commerce</h3></article>
-            <article class="industry-card">04 <h3>Manufacturing</h3></article>
-            <article class="industry-card">05 <h3>Technology</h3></article>
-            <article class="industry-card">06 <h3>Education</h3></article>
-            <article class="industry-card">07 <h3>Telecommunications</h3></article>
-            <article class="industry-card">08 <h3>Professional Services</h3></article>
+            <article class="industry-card">01 <h3>Banking & Finance</h3>
+            </article>
+            <article class="industry-card">02 <h3>Healthcare</h3>
+            </article>
+            <article class="industry-card">03 <h3>Retail & Commerce</h3>
+            </article>
+            <article class="industry-card">04 <h3>Manufacturing</h3>
+            </article>
+            <article class="industry-card">05 <h3>Technology</h3>
+            </article>
+            <article class="industry-card">06 <h3>Education</h3>
+            </article>
+            <article class="industry-card">07 <h3>Telecommunications</h3>
+            </article>
+            <article class="industry-card">08 <h3>Professional Services</h3>
+            </article>
         </div>
     </section>
 
-   
     <section class="mindset">
         <div>
             <p class="eyebrow">THINK DIFFERENTLY</p>
@@ -152,7 +190,6 @@
         </div>
     </section>
 
-    
     <section class="section" id="leadership">
         <div class="section-heading">
             <p class="eyebrow">OUR PEOPLE</p>
@@ -164,31 +201,32 @@
             <article class="leader-card">
                 <div class="leader-image">
                     <img src="https://e3ffrebvxj4.exactdn.com/wp-content/uploads/2026/09/1-4.jpg"
-                         alt="Praveen Panchakarla">
+                        alt="Praveen Panchakarla">
                 </div>
                 <div class="leader-info">
                     <h3>Praveen Panchakarla</h3>
                     <p class="leader-role">President</p>
-                    <p>Leads strategic direction and growth, focusing on innovation, customer success and technology-led transformation.</p>
+                    <p>Leads strategic direction and growth, focusing on innovation, customer success and technology-led
+                        transformation.</p>
                 </div>
             </article>
 
             <article class="leader-card">
                 <div class="leader-image">
                     <img src="https://e3ffrebvxj4.exactdn.com/wp-content/uploads/2026/08/John-Gid-Lockhart-Img.png"
-                         alt="John Gid Lockhart">
+                        alt="John Gid Lockhart">
                 </div>
                 <div class="leader-info">
                     <h3>John Gid Lockhart</h3>
                     <p class="leader-role">Executive Vice President - Sales</p>
-                    <p>Leads strategic sales, business development, client engagement and enterprise technology partnerships.</p>
+                    <p>Leads strategic sales, business development, client engagement and enterprise technology
+                        partnerships.</p>
                 </div>
             </article>
 
             <article class="leader-card">
                 <div class="leader-image">
-                    <img src="https://e3ffrebvxj4.exactdn.com/wp-content/uploads/2026/09/2-4.jpg"
-                         alt="Rakesh Neunaha">
+                    <img src="https://e3ffrebvxj4.exactdn.com/wp-content/uploads/2026/09/2-4.jpg" alt="Rakesh Neunaha">
                 </div>
                 <div class="leader-info">
                     <h3>Rakesh Neunaha</h3>
@@ -200,7 +238,7 @@
             <article class="leader-card">
                 <div class="leader-image">
                     <img src="https://e3ffrebvxj4.exactdn.com/wp-content/uploads/2026/08/CJ-Kumaravel-Img.png"
-                         alt="CJ Kumaravel">
+                        alt="CJ Kumaravel">
                 </div>
                 <div class="leader-info">
                     <h3>CJ Kumaravel</h3>
@@ -212,7 +250,7 @@
             <article class="leader-card">
                 <div class="leader-image">
                     <img src="https://e3ffrebvxj4.exactdn.com/wp-content/uploads/2026/09/Natraj-1.png"
-                         alt="Natraj Sowmitri">
+                        alt="Natraj Sowmitri">
                 </div>
                 <div class="leader-info">
                     <h3>Natraj Sowmitri</h3>
@@ -224,12 +262,13 @@
             <article class="leader-card">
                 <div class="leader-image">
                     <img src="https://e3ffrebvxj4.exactdn.com/wp-content/uploads/2026/08/Vishwamber-Shetty-Img.png"
-                         alt="Vishwamber Shetty">
+                        alt="Vishwamber Shetty">
                 </div>
                 <div class="leader-info">
                     <h3>Vishwamber Shetty</h3>
                     <p class="leader-role">Director, Enterprise Applications</p>
-                    <p>Leads enterprise applications, Salesforce, ServiceNow, cloud platforms and intelligent automation.</p>
+                    <p>Leads enterprise applications, Salesforce, ServiceNow, cloud platforms and intelligent
+                        automation.</p>
                 </div>
             </article>
         </div>
@@ -245,24 +284,18 @@
             <article class="insight-card">
                 <span>TECHNOLOGY</span>
                 <h3>Building a smarter digital future</h3>
-                <!-- <a href="#contact-form">Learn more ↗</a> -->
             </article>
             <article class="insight-card">
                 <span>INNOVATION</span>
                 <h3>Turning business challenges into opportunities</h3>
-                <!-- <a href="#contact-form">Learn more ↗</a> -->
             </article>
             <article class="insight-card">
                 <span>STRATEGY</span>
                 <h3>Creating value through technology</h3>
-                <!-- <a href="#contact-form">Learn more ↗</a> -->
             </article>
         </div>
     </section>
 
-    
-
-    
     <footer class="footer" id="footer">
         <div class="footer-grid">
             <div class="footer-brand">
@@ -276,7 +309,6 @@
                 <p>☎ <a href="tel:+914012345678">+91 40 1234 5678</a></p>
                 <p>✉ <a href="mailto:info@prudent.com">info@prudent.com</a></p>
                 <p>⌖ Hyderabad, Telangana, India</p>
-                <!-- <a href="#contact-form" class="footer-contact-link">Send an enquiry ↗</a> -->
             </div>
 
             <div class="footer-links">
@@ -302,86 +334,138 @@
         </div>
     </footer>
 
-  
     <section class="popup-overlay" id="contact-form">
+
         <a href="#home" class="overlay-close" aria-label="Close contact form"></a>
 
         <div class="popup-box">
-            <a href="#home" class="close-btn" aria-label="Close">&times;</a>
 
-            <p class="eyebrow">GET IN TOUCH</p>
+            <a href="#home" class="close-btn" aria-label="Close contact form">&times;</a>
+
+            <p class="eyebrow">Get In Touch</p>
+
             <h2>Let's Connect.</h2>
+
             <p class="popup-description">
                 Tell us a little about yourself. Our team will get in touch with you.
             </p>
 
-            <form action="#thank-you" method="get">
-                <div class="form-grid">
-                    <div class="form-group">
-                        <label for="full-name">Full name *</label>
-                        <input id="full-name" type="text" placeholder="Your name" required>
-                    </div>
+            <form id="contact-fields">
+  <div class="form-grid">
+    
 
-                    <div class="form-group">
-                        <label for="company-name">Company name *</label>
-                        <input id="company-name" type="text" placeholder="Where you work" required>
-                    </div>
+    <div class="form-group">
+      <label for="full-name" class="form">Full name </label>
+      <input 
+        id="full-name" 
+        name="full-name" 
+        type="text" 
+        placeholder="Your name" 
+        pattern="^[A-Za-z]+([\s\-'][A-Za-z]+)*$" 
+        minlength="2" 
+        title="Full name must be at least 2 characters long and contain letters only."
+        required
+      >
+      <span class="error-msg" id="full-name-error"></span>
+    </div>
 
-                    <div class="form-group">
-                        <label for="work-email">Work email *</label>
-                        <input id="work-email" type="email" placeholder="name@company.com" required>
-                    </div>
+    
 
-                    <div class="form-group">
-                        <label for="role">Role / title</label>
-                        <input id="role" type="text" placeholder="Your role">
-                    </div>
-                </div>
+    <div class="form-group">
+      <label for="company-name" class="form">Company name </label>
+      <input 
+        id="company-name" 
+        name="company-name" 
+        type="text" 
+        placeholder="Where you work"
+        pattern="^[a-zA-Z0-9]+( [a-zA-Z0-9]+)*$" 
+        minlength="2" 
+        title="Company name must contain at least 2 characters and can contain letters, numbers, and spaces only." 
+        required
+      >
+      <span class="error-msg" id="company-name-error"></span>
+    </div>
 
-                <div class="form-group">
-                    <label for="service">Service *</label>
-                    <select id="service" required>
-                        <option value="">Select a service</option>
-                        <option>Digital Transformation</option>
-                        <option>Cloud Solutions</option>
-                        <option>Data & Analytics</option>
-                        <option>Cyber Security Services</option>
-                        <option>Enterprise Applications</option>
-                        <option>AI & Automation</option>
-                        <option>IT Consulting</option>
-                        <option>Partnerships</option>
-                        <option>Other</option>
-                    </select>
-                </div>
+   
 
-                <div class="form-group">
-                    <label for="requirement">Your requirement in brief</label>
-                    <textarea id="requirement" rows="4"
-                        placeholder="Tell us what you're working on"></textarea>
-                </div>
+    <div class="form-group">
+      <label for="work-email" class="form">Work email </label>
+      <input 
+        id="work-email" 
+        name="work-email" 
+        type="email" 
+        placeholder="name@company.com" 
+        required
+      >
+      <span class="error-msg" id="work-email-error"></span>
+    </div>
 
-                <button type="submit" class="submit-btn">Schedule a consultation →</button>
-            </form>
-        </div>
-    </section>
+    
+    <div class="form-group">
+      <label for="role">Role / title</label>
+      <input
+        type="text"
+        name="role"
+        pattern="^[a-zA-Z]+( [a-zA-Z]+)*$"
+        minlength="2"
+        title="Enter a valid role using letters and spaces only.">
+    </div>
+  </div>
+
+ 
+  <div class="form-group">
+    <label for="service" class="form">Service </label>
+    <select id="service" name="service" required>
+      <option value="">Select a service</option>
+      <option value="Digital Transformation">Digital Transformation</option>
+      <option value="Cloud Solutions">Cloud Solutions</option>
+      <option value="Data & Analytics">Data & Analytics</option>
+      <option value="Cyber Security Services">Cyber Security Services</option>
+      <option value="Enterprise Applications">Enterprise Applications</option>
+      <option value="AI & Automation">AI & Automation</option>
+      <option value="IT Consulting">IT Consulting</option>
+      <option value="Partnerships">Partnerships</option>
+      <option value="Other">Other</option>
+    </select>
+    <span class="error-msg" id="service-error"></span>
+  </div>
 
   
+  <div class="form-group">
+    <label for="requirement">Your requirement in brief</label>
+    <textarea id="requirement" name="requirement" rows="4" placeholder="Tell us what you're working on"></textarea>
+  </div>
+
+  <button type="submit" class="submit-btn" formaction="#thank-you">
+    Submit →
+  </button>
+</form>
+
+
+        </div>
+
+    </section>
+
     <section class="popup-overlay success-overlay" id="thank-you">
-        <a href="#home" class="overlay-close" aria-label="Close message"></a>
+        <a href="#home" class="overlay-close" aria-label="Close thank you message"></a>
 
         <div class="popup-box success-box">
-            <a href="#home" class="close-btn" aria-label="Close">&times;</a>
+            <a href="#home" class="close-btn" aria-label="Close thank you message">&time</a>
+
             <div class="success-icon">✓</div>
-            <p class="eyebrow">SUBMISSION COMPLETE</p>
+            <p class="eyebrow">Submission Complete</p>
             <h2>Thank you!</h2>
+
             <p class="popup-description">
                 Your consultation request has been completed in this demo.
                 Our enterprise advisory and delivery team will review your
                 requirements and reach out to you shortly.
             </p>
-            <a href="#home" class="submit-btn back-btn">Back to website →</a>
+
+            <a href="#home" class="submit-btn thankyou-done-btn">Close</a>
         </div>
     </section>
 
 </body>
+
 </html>
