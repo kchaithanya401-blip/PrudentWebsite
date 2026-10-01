@@ -994,7 +994,7 @@ section {
 .popup-box {
     width: 100%;
     max-width: 720px;
-    max-height: 140vh;
+    max-height: 150vh;
     overflow-y: auto;
     position: relative;
     padding: 20px;
